@@ -8,19 +8,26 @@
 const royalSupplies = ['Sword', 'Shield', 'Potion']
 
 function addSupply(supply) {
-  royalSupplies.push
+  royalSupplies.push(supply)
 }
 
 function countSupplies() {
-  royalSupplies.length
+  return royalSupplies.length
 }
 
 addSupply('Map')
 
 console.log(
-  `⚔️ The royal inventory contains ${countSupply()} supplies.`
+  `⚔️ The royal inventory contains ${countSupplies()} supplies.`
 )
 
 /* ⭐ BONUS QUEST
    Use a loop to display every item with the 📦 icon.
 */
+
+
+for (let item of royalSupplies){
+
+  console.log(`📦${ item}`)
+}
+
